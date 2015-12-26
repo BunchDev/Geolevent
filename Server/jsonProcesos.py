@@ -23,10 +23,10 @@ class JsonProceso:
 	#se declaran todos los atributos que forman parte de la clase
 	def __init__(self):
 		jsonLocal = ""
-
+	#-------------procesarPeticion----------------------
+	#Este metodo lee correctamente el encabezado del Json y en base a eso realiza una accion
 	def procesarPeticion(self,jsonInput):
 		self.jsonLocal = json.loads(jsonInput)
-		for evento in self.jsonLocal['eventos']:
-			print evento['longitud']
+		
 
 
