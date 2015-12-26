@@ -1,0 +1,50 @@
+
+NOMENCLATURAS PARA EL ENVIO, PROCESAMIENTO Y RECEPCION DE JSON's
+
+---- Solicitud de eventos por parte del cliente ----
+
+el telefono manda un JSON con los requerimientos
+datos: 
+
+{
+
+request :[
+cabecera: request-events
+longitud: -1234.4544
+latitud: -234.6776
+]
+
+}
+
+la respuesta sera: 
+NOTA: En el caso que el tipo de evento sea comercial (version extendida de la aplicacion)
+se incluirá una url con la imagen de la marca, en el atributo tipo se especificará el tipo de evento y se
+colocará de lado del cliente la imagen que corresponde a excepción si es de tipo "comercial" ahí se usará el link 
+donde está alojado la imagen de la marca.
+
+Ejemplo:
+
+{
+"eventos" : 
+	[
+	nombre: "evento 1",
+	descripcion: "una breve descripcion",
+	latitud: "12333.443",
+	longitud: "23223.5"
+	tipo: "policiaca"
+	imagen_url: "http://www.imagenes.com/eventos/evento_12343.jpg"
+	imagen_marca_url:""
+	],
+	[
+	nombre: "evento n",
+	descripcion: "una breve descripcion",
+	latitud: "12333.443",
+	longitud: "23223.5"
+	tipo: "comercial"
+	imagen_url: "http://www.imagenes.com/eventos/evento_n.jpg"
+	imagen_marca_url:"http://www.imagenes.com/marcas/marca1.jpg"
+	]
+
+
+
+}
