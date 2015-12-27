@@ -1,5 +1,16 @@
 <Alloy>
-	<Window class="container">
-		<Label id="label" onClick="doClick">Hello, World</Label>
-	</Window>
+	<TabGroup backgroundColor="black" >
+            <Tab id="mapa" title="Mapa" icon="KS_nav_views.png">
+                <Window id="map" title="Explorar Eventos">
+                  <View id="mapview" ns="Ti.Map" animate="true" regionFit="true" userLocation="true" mapType="Ti.Map.STANDARD_TYPE"/>
+                </Window>
+            </Tab>
+             <Tab id="registrar" title="Registrar Evento" icon="KS_nav_views.png">
+                <Window id="regevento" title="Registrar Evento">
+                 <!-- Cesar aca agrega todo lo necesario con lo del formulario y en el controlador agrega lo necesario igual -->
+                </Window>
+            </Tab>
+         
+        </TabGroup>
+        
 </Alloy>
