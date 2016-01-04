@@ -8,7 +8,7 @@
              <Tab id="registrar" title="Registrar Evento" icon="KS_nav_views.png">
                 <Window id="regevento" title="Registrar Evento" class="container">
                  <!-- Cesar aca agrega todo lo necesario con lo del formulario y en el controlador agrega lo necesario igual -->
-                 <View/>                 <!--ancho alto -->
+                                 <!--ancho alto -->
                  		<Label id="labelTop" width="150" height="40" top="20">Registrar un reporte </Label>
                  		<!-- <ListView id="listUsuario" top="50">
                  			<ListSection id="section" headerTitle="Tipo de usuario">
