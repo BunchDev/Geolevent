@@ -1,0 +1,10 @@
+
+".container" : {
+  
+},
+
+"#labeltitulo":{
+	top: "100dp",
+	width: "100px",
+	heigth: "200px"	
+}

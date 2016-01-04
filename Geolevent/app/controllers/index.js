@@ -9,7 +9,6 @@ Titanium.Geolocation.getCurrentPosition(function(e)
         alert('Error en la captura de tu ubicacion actual');
         return;
     }
-
   
 var region = {
     latitude : e.coords.latitude,
@@ -21,5 +20,17 @@ var region = {
    $.mapview.setRegion(region);
 
 });
+
+function addsomething(){
+/*	var textValue = $.text.getValue();
+    var hobbyData = [
+    {properties: { title:textValue}},
+            ];
+
+    var item = $.section.appendItems(hobbyData);
+    $.list.setSections(item);
+
+    $.text.blur();  */
+}
 
 $.index.open();

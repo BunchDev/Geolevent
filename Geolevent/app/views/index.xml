@@ -6,8 +6,46 @@
                 </Window>
             </Tab>
              <Tab id="registrar" title="Registrar Evento" icon="KS_nav_views.png">
-                <Window id="regevento" title="Registrar Evento">
+                <Window id="regevento" title="Registrar Evento" class="container">
                  <!-- Cesar aca agrega todo lo necesario con lo del formulario y en el controlador agrega lo necesario igual -->
+                 <View/>                 <!--ancho alto -->
+                 		<Label id="labelTop" width="150" height="40" top="20">Registrar un reporte </Label>
+                 		<!-- <ListView id="listUsuario" top="50">
+                 			<ListSection id="section" headerTitle="Tipo de usuario">
+                 				<ListItem title="Mi usuario"></ListItem>
+                 				<ListItem title="Anonimo"></ListItem>
+                 			</ListSection>
+                		</ListView> -->
+                		<!-- segunda lista -->
+                		<!-- <ListView id="listReporte" top="10">
+                 			<ListSection id="section" headerTitle="Tipo de reporte">
+                 				<ListItem title="Invitacion a evento social"></ListItem>
+                 				<ListItem title="Reportar accidente"></ListItem>
+                 				<ListItem title="Denuncia ciudadana"></ListItem>
+                 			</ListSection>
+                		</ListView> -->
+<!--Listas ocultas -->
+						<!-- <ListView id="listOpcionEventoSocial" top="10">
+                 			<ListSection id="section" headerTitle="Tipo:">
+                 				<ListItem title="Cultura"></ListItem>
+                 				<ListItem title="Politico"></ListItem>
+                 				<ListItem title="Ayuda humanitaria"></ListItem>
+                 			</ListSection>
+                		</ListView> -->
+                		
+<!--Lista opcion accidente -->                		           
+                		<!-- <ListView id="listOpcionReportarAccidente" top="10">
+                 			<ListSection id="section" headerTitle="Tipo:">
+                 				<ListItem title="Incendio"></ListItem>
+                 				<ListItem title="Choque"></ListItem>
+                 				<ListItem title="Deslave"></ListItem>
+                 				<ListItem title="Otro"></ListItem>
+                 			</ListSection>
+                </ListView> -->     
+                 		<TextField id="text" width= "230" height= "30" top="300" hintText= "Nombre"></TextField>
+                 		<TextArea id="tAreaDescripcion" width="230" height="70" top="340" value="Descripcion"></TextArea>
+                 		<Button id="enviar" title="Enviar" width="100" height="40" top="420" onClick="addsomething"></Button>
+                 		
                 </Window>
             </Tab>
          
