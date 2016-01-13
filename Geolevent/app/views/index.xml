@@ -10,7 +10,20 @@
                  <!-- Cesar aca agrega todo lo necesario con lo del formulario y en el controlador agrega lo necesario igual -->
                                  <!--ancho alto -->
                  		<Label id="labelTop" width="150" height="40" top="20">Registrar un reporte </Label>
-                 		<!-- <ListView id="listUsuario" top="50">
+                 		
+                 		<ListView id="listViewT" onItemClick='listItemClicked'>
+                 		<Templates>
+                 			<ItemTemplate name='listViewTemplate' height='100dp'>
+                 				<View id="templateWrapper">
+                 					<Label bindId='name' id='name'></Label>
+                 					<Label bindId='location' id='location'></Label>
+                 				</View>
+                 			</ItemTemplate>
+                 		</Templates>
+                 		
+                 		<ListSection id='listSection'></ListSection>
+					</ListView>	
+                 		<!-- <ListView id="listUsuario" defaultItemTemplate="template" top="50">
                  			<ListSection id="section" headerTitle="Tipo de usuario">
                  				<ListItem title="Mi usuario"></ListItem>
                  				<ListItem title="Anonimo"></ListItem>
